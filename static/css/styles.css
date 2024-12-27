@@ -1,0 +1,256 @@
+:root{
+    --color-1 : rgb(28, 55, 104); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#logo{
+    background: transparent;
+}
+
+nav{
+    border-bottom: 1px solid var(--color-1);
+    font-size: 15px;
+}
+
+.message_title{
+    font-family: Dancing Script, cursive;
+}
+
+
+#carousel_img {
+    width: 100%;
+    height: 80vh;
+    /* object-fit: cover; */
+}
+
+#text_underline{
+    height: 5px;
+    width: 100px;
+    background: var(--color-1);
+    margin-bottom: 3%;
+}
+
+.section-2{
+    background: #f5822021;
+}
+
+#card i{
+    color: #fff;
+    font-size: 50px;
+}
+
+#card_container{
+    padding: 0;
+    margin: 0;
+}
+
+#card {
+    background: var(--color-1);
+    border-radius: 5px;
+    margin: 0px 5px 5px 0px;
+}
+
+#card:hover{
+    transform: translateY(-5%);
+}
+
+#card .col-4 {
+    padding: 30px 20px;
+}
+
+#card .col-8 {
+    padding: 30px 5px 0px 20px;
+}
+
+#card h5{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#card p{
+    color: #cecece;
+    font-size: 12px;
+}
+
+.upper-footer{
+    background: var(--color-1);
+    border-top: 3px solid rgb(129, 129, 129);
+}
+
+.upper-footer img {
+    width: 80%;
+}
+
+.bottom_footer{
+    background: rgb(0, 3, 26);
+    color: #fff;
+}
+
+#dev_text{
+    text-align: end;
+}
+
+#dev_text a {
+    font-weight: 400;
+    font-style: italic;
+    color: gold;
+    text-decoration: none;
+}
+
+#dev_text a:hover {
+    text-decoration: underline;
+    color: rgb(47, 255, 47);
+    font-weight: bold;
+}
+
+.about_ethereal{
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.upper-footer a {
+    color: #cecece;
+    font-size: 13px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#upper-footer-col-3 a {
+    font-weight: bold;
+}
+
+#admission_btn{
+    color: var(--color-1);
+    background-color: #fff;
+    border-radius: 20px;
+    border: 2px solid var(--color-1);
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    display: inline;
+}
+
+#para{ 
+    text-align: justify;
+    color: var(--color-1);
+    font-family: sans-serif;
+    font-style: oblique;
+}
+
+.title_heading{
+    font-style: italic;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sub-title{
+    font-size: 12px;
+    color: var(--color-1);
+    font-weight: bold;
+}
+
+#President-img{
+    border-radius: 5px;
+}
+
+#admission_btn:hover{
+    background-color: var(--color-1);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.blog-text{
+    font-size: 13px;
+}
+
+.blog-text:hover{
+    color: var(--color-1);
+}
+
+.gallery-conatiner {
+    display: flex;
+}
+
+#gallery-img {
+    width: 100%;
+    height: 50vh;
+    display: block;
+    object-fit: cover;
+}
+
+.carousel-item video {
+    width: 100% !important;
+    height: 50vh;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.footer_head{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+#follow_text{
+    color: #cecece;
+    font-size: 13px;
+    text-align: justify;
+}
+
+#address{
+    color: #cecece;
+    font-size: 13px;
+    line-height: 5px;
+}
+
+.footer_icons a{
+    color: var(--color-1);
+    display: inline;
+    font-size: 15px;
+    border: 1px solid var(--color-1);
+    border-radius: 50%;
+    background: #fff;
+    padding: 5px;
+}
+
+#form_row, #signup_form{
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.footer_icons a:hover{
+    background: var(--color-1);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+@media(max-width:520px){
+    .bottom_footer, .upper-footer{
+        text-align: center;
+    }
+    #dev_text{
+        text-align: center;
+    }
+
+    .admisson_head{
+        margin-top: 30px;
+    }
+}
