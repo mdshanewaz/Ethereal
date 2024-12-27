@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.about-section{
+    background: var(--color-1);
+    color: #fff;
+}
+
+.about-section h1{
+    font-weight: bold;
+}
+
+
+#about-img {
+    box-shadow: -15px 15px 5px rgb(129, 129, 129);
+    border-radius: 5px;
+}
+
+#flip_back {
+    padding-left: 15%;
+    text-align: left;
+    vertical-align: middle; 
+}
+
+#flip_back_list {
+    padding-left: 30%;
+}
+
+#school_slogan {
+    font-family: "Ubuntu", sans-serif;
+}

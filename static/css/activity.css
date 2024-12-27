@@ -1,0 +1,33 @@
+#activity-img_1 {
+    box-shadow: -15px 15px 5px rgb(129, 129, 129);
+    border-radius: 5px;
+    height: 60vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+#activity-img_2 {
+    box-shadow: 15px 15px 5px rgb(129, 129, 129);
+    border-radius: 5px;
+    float: right;
+    height: 60vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+#full_day_schl{
+    background: #f5822021;
+}
+
+@media(max-width:520px){
+    #activity-img_1, #activity-img_2 {
+        width: 100%;
+    }
+    #dev_text{
+        text-align: center;
+    }
+
+    .admisson_head{
+        margin-top: 30px;
+    }
+}

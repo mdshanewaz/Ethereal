@@ -1,0 +1,279 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title_block %} {{ title }} {% endblock %}
+
+{% block body_block %}
+
+<section class="contain">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000" id="carousel">
+          <img src="{% static 'img/banner/Web Cover Final-01.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="{% static 'img/banner/Web Cover Final-02.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="{% static 'img/banner/Web Cover Final-03.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="{% static 'img/banner/Web Cover Final-04.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="row pt-3 mt-5">
+      <div class="col-md-8 pt-3">
+        <h1 class="message_title">Message from the Chairman</h1>
+        <div class="" id="text_underline"></div>
+        <p id="para">The modern world is running on the wheels of education. In order to survive in the competitive   world, we all need education as a torch that leads the way.</p>
+
+        <p id="para">I believe that a good school is a holy place where the light of wisdom is focused and that the teacher is the mysterious laboratory's magical master. They provide the power of education to today’s youth, thereby giving them the possibility for a better future.</p>
+
+        <p id="para">ETHEREAL is the first English Medium School in Feni following Cambridge Curriculum, UK with Islamic education. We have started our journey with a mission and vision to flourish wise and competent leadership who will lead the world in various sectors and fulfill the responsibilities of their society through academic excellence, intellectual growth and moral values.</p>
+
+        <p id="para">We are committed to provide state-of-the-art educational facilities, qualified teachers team and a conducive learning environment for learners.</p>
+
+        <p id="para">I welcome you all to visit our campus and for the betterment of ETHEREAL your valuable advice is expected.</p>
+
+        <h5 class="title_heading">Wing Commander (Retd) Shah Imran Chowdhury</h5>
+        <p class="sub-title">President, Ethereal English Medium School</p>
+      </div>
+      <div class="col-md-4 px-5">
+        <img class="img-fluid mt-sm-5" id="President-img" src="{% static 'img/president.jpg' %}" alt="">
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><hr></div>
+
+  <section class="container">
+    <div class="row pb-sm-5">
+      <div class="col-md-4 px-5">
+        <img class="img-fluid mt-md-5" id="President-img" src="{% static 'img/Head.jpg' %}" alt="">
+      </div>
+      <div class="col-md-8 pt-3 mt-sm-4">
+        <h1 class="message_title">Message from the Head of School</h1>
+        <div class="" id="text_underline"></div>
+        <p id="para">Assalamu Alaikum Warahmatullah.</p>
+        <p id="para">It is my honor and privilege to extend a warm welcome to you on behalf of ETHEREAL, Feni's pioneering English Medium School. As the Head of the School, I am excited to embark on a journey of knowledge, growth, and excellence alongside each of you.</p>
+        <p id="para">At ETHEREAL, we believe in the transformative power of education. Our commitment to the Cambridge Curriculum, coupled with Islamic education, reflects our dedication to providing a holistic and enriching learning experience. Our aim is not only to impart knowledge but to foster critical thinking, creativity, and moral values in our students.</p>
+        <p id="para">We take pride in our qualified teaching team, state-of-the-art facilities, and a learning environment designed to inspire and empower. ETHEREAL is more than an institution; it is a community where each student is encouraged to explore their potential and contribute meaningfully to society.</p>
+        <p id="para">Thank you for choosing ETHEREAL. Let us embark on this educational journey hand in hand.</p>
+        <h5 class="title_heading">M. Ashraful Hoque Bhuiyan</h5>
+        <p class="sub-title">Head of the School, ETHEREAL.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container mt-md-3 mb-md-5">
+    <h1 class="">OUR ACTIVITIES</h1>
+    <div class="row">
+      <div class="col-md-6 gallery-conatiner">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="img/SL1 (1).jpeg" class="d-block w-100" id="gallery-img" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/SL1 (1).jpg" class="d-block w-100" id="gallery-img" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/SL1 (2).jpg" class="d-block w-100" id="gallery-img" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/SL1 (3).jpg" class="d-block w-100" id="gallery-img" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 gallery-conatiner">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <video class="d-block w-100" src="videos/video1.mp4" controls></video>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <video src="videos/video2.mp4" controls></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-2 py-5">
+    <div class="container"> 
+      <h1 class="">OUR CLUBS</h1>
+      <div class="" id="text_underline"></div>
+      <div class="row p-2">
+        <div class="col-md-3" id="card_container">
+          <div class="row" id="card">
+            <div class="col-4">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="col-8">
+              <h5>ROBO TECH <br> CLUB</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" id="card_container">
+          <div class="row" id="card">
+            <div class="col-4">
+              <i class="fa-solid fa-language"></i>
+            </div>
+            <div class="col-8">
+              <h5>LANGUAGE <br> BRIDGES CLUB</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" id="card_container">
+          <div class="row" id="card">
+            <div class="col-4">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <div class="col-8">
+              <h5>MATH MAGICIA <br> CLUB</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" id="card_container">
+          <div class="row" id="card">
+            <div class="col-4">
+              <i class="fa-solid fa-music"></i>
+            </div>
+            <div class="col-8">
+              <h5>CULTURE & <br> MEDIA CLUB</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" id="card_container">
+          <div class="row" id="card">
+            <div class="col-4">
+              <i class="fa-solid fa-dumbbell"></i>
+            </div>
+            <div class="col-8">
+              <h5>ACTIVE <br> ADVENTURES CLUB</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" id="card_container">
+          <div class="row" id="card">
+            <div class="col-4">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <div class="col-8">
+              <h5>GIVING <br> HANDS CLUB</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" id="card_container">
+          <div class="row" id="card">
+            <div class="col-4">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+            <div class="col-8">
+              <h5>BINARY <br> BRILLANCE CLUB</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div><div class="col-md-3" id="card_container">
+          <div class="row" id="card">
+            <div class="col-4">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <div class="col-8">
+              <h5>ENGINEERING <br> ELEVATION CLUB</h5>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-md-6">
+          <h2 class="">NEWS & MEDIA</h2>
+          <div class="" id="text_underline"></div>
+          <div class="row pb-2">
+            <div class="col-3"><img class="img img-fluid" src="img/blog2.jpg" alt=""></div>
+            <div class="col-9"><a class="blog-text" href="">INTERNATIONAL “SCHOOL OF LIFE” IN THE HEART OF FEMI!</a></div>
+        </div>
+        <div class="row pb-2">
+          <div class="col-3"><img class="img img-fluid" src="img/blog3.jpg" alt=""></div>
+          <div class="col-9"><a class="blog-text" href="">INTERNATIONAL “SCHOOL OF LIFE” IN THE HEART OF FEMI!</a></div>
+      </div>
+      <div class="row pb-2">
+        <div class="col-3"><img class="img img-fluid" src="img/blog1.jpg" alt=""></div>
+        <div class="col-9"><a class="blog-text" href="">INTERNATIONAL “SCHOOL OF LIFE” IN THE HEART OF FEMI!</a></div>
+      </div>
+      <div class="row pb-2">
+        <div class="col-3"><img class="img img-fluid" src="img/blog2.jpg" alt=""></div>
+        <div class="col-9"><a class="blog-text" href="">INTERNATIONAL “SCHOOL OF LIFE” IN THE HEART OF FEMI!</a></div>
+    </div>
+    <div class="row pb-2">
+      <div class="col-3"><img class="img img-fluid" src="img/blog3.jpg" alt=""></div>
+      <div class="col-9"><a class="blog-text" href="">INTERNATIONAL “SCHOOL OF LIFE” IN THE HEART OF FEMI!</a></div>
+  </div>
+  <div class="row pb-2">
+    <div class="col-3"><img class="img img-fluid" src="img/blog1.jpg" alt=""></div>
+    <div class="col-9"><a class="blog-text" href="">INTERNATIONAL “SCHOOL OF LIFE” IN THE HEART OF FEMI!</a></div>
+  </div>
+        </div>
+        <div class="col-md-6">
+          <h1 class="admisson_head">NOTICE</h1>
+          <div class="" id="text_underline"></div>
+          <div class="row">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <div class="d-block w-100 text-center">
+                    <h2>Notice 1</h2>
+                    <img src="img/blog1.jpg" alt="" style="width: 100%;">
+                    <a class="btn btn-primary my-2">Read More About It</a>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="d-block w-100 text-center">
+                    <h2>Notice 2</h2>
+                    <img src="img/blog2.jpg" alt="" style="width: 100%;">
+                    <a class="btn btn-primary my-2">Read More About It</a>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="d-block w-100 text-center">
+                    <h2>Notice 3</h2>
+                    <img src="img/blog3.jpg" alt="" style="width: 100%;">
+                    <a class="btn btn-primary my-2">Read More About It</a>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="d-block w-100 text-center">
+                    <h2>Notice 4</h2>
+                    <img src="img/Dangler-Back.png" alt="" style="width: 100%;">
+                    <a class="btn btn-primary my-2">Read More About It</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %} 
