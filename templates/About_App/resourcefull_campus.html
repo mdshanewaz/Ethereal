@@ -1,0 +1,137 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title_block %} {{ title }} {% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/campus.css' %}">
+{% endblock css %}
+
+{% block body_block %}
+    <section class="about-section py-5">
+      <div class="contain text-center">
+          <h1 class="py-4">OUR CAMPUS</h1>
+      </div>
+    </section>
+
+    <section class="mt-sm-3 pt-5">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-6">
+                  <img class="img img-fluid" id="campus-img_1" src="img/class_room.jpg" alt="">
+                </div>
+                <div class="col-md-6 mt-5 mt-sm-2">
+                  <h2 class="">STANDARD CLASSROOM</h2>
+                  <div class="" id="text_underline"></div>
+                    <p id="para"><br>
+                      20 students' standard classroom. <br><br>
+                      Well furnished multimedia classroom. <br><br>
+                      LED Monitor, Digital Sound System. <br><br>
+                      Fully air conditioned campus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-sm-3 pt-sm-5">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-6 mt-5 mt-sm-2">
+                    <h2 class="">LIBRARY</h2>
+                    <div class="" id="text_underline"></div>
+                      <p id="para"> <br>
+                        ETHEREAL has an exuberant library with an excellent collection of boks, journals, magazines, daily newspapers, etc.<br><br>The library rules have been adapted to support the students, teachers and other members of the college
+                      </p>
+                  </div>
+                <div class="col-md-6">
+                  <img class="img img-fluid" id="campus-img_2" src="img/library.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-sm-3 py-5" id="sec_uneven">
+      <div class="container"> 
+          <div class="row">
+              <div class="col-md-6">
+                <img class="img img-fluid" id="campus-img_1" src="img/activity.jpg" alt="">
+              </div>
+              <div class="col-md-6 mt-5 mt-sm-2">
+                <h2 class="">SCIENCE LAB</h2>
+                <div class="" id="text_underline"></div>
+                  <p id="para">Science lab is the center of science teaching and learning.<br>to facilitate the students, ETHEREAL Science Department has a well-equipped Science lab with all the modern facilities for the students of class 3 to 'O' Levels. <br> The Labroratory has been given a cental and distinctive role in the learning and understanding of science. <br> Practical experience necessary for better understanding of scientific research. By carring out different experiments the students' reasonning skills are honed and they start thinking deeply on those theory and concepts. <br> Practical work in science education is used to engage students in invetigations, discoveries, inquiries and problem-solving activities.</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="pb-5" id="sec_uneven">
+      <div class="container"> 
+          <div class="row">
+              <div class="col-md-6">
+                <img class="img img-fluid" id="campus-img_1" src="img/activity.jpg" alt="">
+              </div>
+              <div class="col-md-6 mt-5 mt-sm-2">
+                <h2 class="">COMPUTER LAB</h2>
+                <div class="" id="text_underline"></div>
+                  <p id="para">ETHEREAL has a computer lab with more than 20 computers equipped with latest technology to ensure that the students keep abreast with the fast-changing IT scenario. The labs  are equipped with a dedicated broadband internet connection for enterprising students who love to work connected with the digitalized world. <br><br>The department has qualified, committed teachers to teach different classed. The faculty members amake continous efforts to see that the students must get expertise in the practical implementation of tools they have in their curriculum. Students are provided with computer education right from class 3. We maintain and ideal student-computer ratio 1:1.</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="mt-sm-3 pt-sm-5">
+      <div class="container"> 
+          <div class="row">
+              <div class="col-md-6 mt-5 mt-sm-2">
+                  <h2 class="">ACTIVITY ROOM</h2>
+                  <div class="" id="text_underline"></div>
+                    <p id="para"> <br>
+                      ETHEREAL has an exuberant library with an excellent collection of boks, journals, magazines, daily newspapers, etc.<br><br>The library rules have been adapted to support the students, teachers and other members of the college
+                    </p>
+                </div>
+              <div class="col-md-6">
+                <img class="img img-fluid" id="campus-img_2" src="img/library.jpg" alt="">
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="mt-sm-3 pt-5">
+      <div class="container"> 
+          <div class="row">
+              <div class="col-md-6">
+                <img class="img img-fluid" id="campus-img_1" src="img/class_room.jpg" alt="">
+              </div>
+              <div class="col-md-6 mt-5 mt-sm-2">
+                <h2 class="">TRANSPORT</h2>
+                <div class="" id="text_underline"></div>
+                  <p id="para"><br>
+                    20 students' standard classroom. <br><br>
+                    Well furnished multimedia classroom. <br><br>
+                    LED Monitor, Digital Sound System. <br><br>
+                    Fully air conditioned campus.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="mt-sm-3 py-5" id="sec_uneven">
+      <div class="container"> 
+          <div class="row">
+              <div class="col-md-6 mt-5 mt-sm-2">
+                <h2 class="">UNIFORM</h2>
+                <div class="" id="text_underline"></div>
+                  <p id="para">School provided fabrics and design for all students.<br>White shoes for both boys and girls.</p>
+              </div>
+              <div class="col-md-6">
+                <img class="img img-fluid" id="campus-img_2" src="img/activity.jpg" alt="">
+              </div>
+          </div>
+      </div>
+    </section>
+{% endblock %}

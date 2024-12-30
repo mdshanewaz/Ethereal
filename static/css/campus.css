@@ -1,0 +1,22 @@
+#campus-img_1, #campus-img_2 {
+    box-shadow: -15px 15px 5px rgb(129, 129, 129);
+    border-radius: 5px;
+    width: 25vw;
+    height: 50vh;
+    object-fit: cover;
+}
+
+#campus-img_2 {
+    box-shadow: 15px 15px 5px rgb(129, 129, 129);
+    float: right;
+}
+
+#sec_uneven {
+    background: #f5822021;
+}
+
+@media(max-width:520px){ 
+    #campus-img_1, #campus-img_2 {
+        width: 100%;
+    }
+}

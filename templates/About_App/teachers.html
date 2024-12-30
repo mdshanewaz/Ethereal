@@ -1,0 +1,191 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title_block %} {{ title }} {% endblock %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/teachers.css' %}">
+{% endblock css %}
+
+{% block body_block %}   
+    <section class="contain">
+        <img class="img_banner" src="{% static 'img/teachers.jpg' %}" alt="">
+        <div class="overlay"> 
+            <h2 class="text-light display-3">OUR DEDICATED FACULTY MEMBERS</h2>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row mt-5 pt-3">
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row mt-sm-5 pt-sm-3">
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row mt-sm-5 pt-sm-3">
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row mt-sm-5 pt-sm-3">
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 mt-5">
+                <div class="card text-center">
+                    <img class="img-thumbnail img-fluid rounded-circle w-50 mx-auto " src="{% static 'img/teacherAvatar.png' %}" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title" id="title">Sharmin Khan</h4>
+                      <p class="card-text">Computer Science Teacher</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                <h4 class="modal-title">About <span class="">"Sharmin Khan"</span></h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                <img class="img-fluid w-100 pb-3 px-5" src="img/teacherAvatar.png" alt="">
+                <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente adipisci reprehenderit repellat quasi aliquid consequatur, minima eaque facere eligendi obcaecati neque dolore minus reiciendis, voluptatem atque harum laboriosam dolorum perferendis.</p>
+                
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer mx-auto">
+                    <a href="https://www.facebook.com/etherealschoolbd/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <!-- <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button> -->
+            </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

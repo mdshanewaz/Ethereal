@@ -29,3 +29,30 @@ def feature_view(request):
     }
 
     return render(request, 'About_App/feature.html', context=context)
+
+def teacher_view(request):
+    title = 'Faculty | Ethereal'
+
+    context = {
+        'title' : title,
+    }
+
+    return render(request, 'About_App/teachers.html', context=context)
+
+def extracurr_view(request):
+    title = 'Exttracurricular | Ethereal'
+
+    context = {
+        'title' : title,
+    }
+
+    return render(request, 'About_App/extracurricular.html', context=context)
+
+def resourceful_campus_view(request):
+    title = 'Resourceful Campus | Ethereal'
+
+    context = {
+        'title' : title,
+    }
+
+    return render(request, 'About_App/resourcefull_campus.html', context=context)

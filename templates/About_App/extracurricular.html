@@ -1,0 +1,118 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title_block %} {{ title }} {% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/activity.css' %}">
+{% endblock css %}
+
+{% block body_block %} 
+    <section class="about-section py-5">
+        <div class="contain text-center">
+            <h1 class="py-4">EXTRACURRICULAR ACTIVITIES</h1>
+        </div>
+    </section>
+
+    <section class="section-2 py-5">
+        <div class="container"> 
+          <h1 class=""></h1>
+          <!-- <div class="" id="text_underline"></div> -->
+          <div class="row p-2">
+            <div class="col-md-3" id="card_container">
+              <div class="row" id="card">
+                <div class="col-4">
+                  <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="col-8">
+                  <h5>ROBO TECH <br> CLUB</h5>
+                  <p>Science & Technology</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" id="card_container">
+              <div class="row" id="card">
+                <div class="col-4">
+                  <i class="fa-solid fa-language"></i>
+                </div>
+                <div class="col-8">
+                  <h5>LANGUAGE <br> BRIDGES CLUB</h5>
+                  <p>English, Arabic, Bengali</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" id="card_container">
+              <div class="row" id="card">
+                <div class="col-4">
+                  <i class="fa-solid fa-calculator"></i>
+                </div>
+                <div class="col-8">
+                  <h5>MATH MAGICIA <br> CLUB</h5>
+                  <p>Math Olympiad</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" id="card_container">
+              <div class="row" id="card">
+                <div class="col-4">
+                  <i class="fa-solid fa-music"></i>
+                </div>
+                <div class="col-8">
+                  <h5>CULTURE & <br> MEDIA CLUB</h5>
+                  <p>Coding, Programming</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" id="card_container">
+              <div class="row" id="card">
+                <div class="col-4">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div class="col-8">
+                  <h5>ACTIVE <br> ADVENTURES CLUB</h5>
+                  <p>Karate & Sports</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" id="card_container">
+              <div class="row" id="card">
+                <div class="col-4">
+                  <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+                <div class="col-8">
+                  <h5>GIVING <br> HANDS CLUB</h5>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" id="card_container">
+              <div class="row" id="card">
+                <div class="col-4">
+                  <i class="fa-solid fa-terminal"></i>
+                </div>
+                <div class="col-8">
+                  <h5>BINARY <br> BRILLANCE CLUB</h5>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div><div class="col-md-3" id="card_container">
+              <div class="row" id="card">
+                <div class="col-4">
+                  <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="col-8">
+                  <h5>ENGINEERING <br> ELEVATION CLUB</h5>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+{% endblock %}
+
+
