@@ -1,0 +1,68 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title_block %} {{ title }} {% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/activity.css' %}">
+    <link rel="stylesheet" href="{% static 'css/campus.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mission.css' %}">
+{% endblock css %}
+
+{% block body_block%}
+    <section class="about-section py-5">
+      <div class="contain text-center">
+          <h1 class="py-4">OUR HIFZUL QURAN</h1>
+      </div>
+    </section>
+
+    <section class="mt-sm-5 py-5" id="full_day_schl">
+        <div class="container"> 
+            <div class="row mt-5 pt-sm-5">
+                <div class="col-md-6 mt-sm-2">
+                    <h2 class="">HIFZUL QUR'AN</h2>
+                    <div class="" id="text_underline"></div>
+                      <p id="para"><br> Special arrangement for those students who want to be Hafez & Hafeza along with academic studies. <br><br>Holy qur'an memorization begins from grade 1 and is integrated in the schedule with our regular curriculum. <br><br>This offered six (6) days a week from Saturday - Thursday.</p>
+                  </div>
+                <div class="col-md-6">
+                  <img class="img img-fluid" id="activity-img_2" src="{% static 'img/DS.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-sm-3 py-5">
+      <div class="container"> 
+          <div class="row">
+              <div class="col-md-6">
+                <img class="img img-fluid" id="activity-img_1" src="{% static 'img/Waqia.jpg' %}" alt="">
+              </div>
+              <div class="col-md-6 mt-5 mt-sm-2">
+                <h2 class="">ADMISION CRITERIA</h2>
+                <div class="" id="text_underline"></div>
+                  <p id="para"><br> Pupils can apply for hidz-ul-Quran if they are at least 6 years of age. Applicants who meet the above criteria will be offered a place in Hifz Class if they are successful in the Hifz Entry Test and subject to spaces available. <br> <br>
+                  The main focus of the test will be on memorization and tarweed, if they are unsuccessful or if they do not meet the criteria set out above, they will be offered a place in the General Quran memorizing course. <br><br>Pupils ususally finish the full memorization of Holy Quran by year 10, which allows them ample time to retain all that has been learnt to memory.</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container"> 
+        <div class="row mt-5">
+            <div class="col-md-6 mt-sm-2">
+                <h2 class="">CURRICULUM OVERVIEW</h2>
+                <div class="" id="text_underline"></div>
+                  <p id="para"> <br>
+                    The school has adopted a syllabus based around the needs of individual students. The complete syllabus takes 4.5 to more years to complete depending on the individual's ability & attendance. <br> Entry age is from age 5+. Our plan is to cover a wide range of topics. We have four groups including;<br>Foundation Course (level-1)<br>Bridge Course (level-2) <br>Intermediate Course (level-3) <br>Advanced Course (level-4).<br>Three subject areas will be covered; Quran, Arabic Language and Islamic Studies.
+                  </p>
+              </div>
+            <div class="col-md-6">
+              <img class="img img-fluid" id="campus-img_2" src="{% static 'img/Hifz-Blue-Png.png' %}" alt="">
+            </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

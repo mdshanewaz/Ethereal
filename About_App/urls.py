@@ -9,5 +9,6 @@ urlpatterns = [
     path('feature/', views.feature_view, name='feature'),
     path('teachers/', views.teacher_view, name='teachers'),
     path('extracurr/', views.extracurr_view, name='extracurr'),
-    path('resourcefull_campus/', views.resourceful_campus_view, name='resourcefull_campus'),
+    path('campus/', views.resourceful_campus_view, name='campus'),
+    path('hifz/', views.hifz_view, name='hifz'),
 ]

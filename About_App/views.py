@@ -56,3 +56,12 @@ def resourceful_campus_view(request):
     }
 
     return render(request, 'About_App/resourcefull_campus.html', context=context)
+
+def hifz_view(request):
+    title = 'Hifz | Ethereal'
+
+    context = {
+        'title' : title,
+    }
+
+    return render(request, 'About_App/hifz.html', context=context)
