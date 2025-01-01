@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title_block %} {{ title }} {% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/activity.css' %}">
+{% endblock css %}
+
+
+{% block body_block %}
+    <section class="about-section py-5">
+      <div class="contain text-center">
+          <h1 class="py-4">OUR CURRICULAM</h1>
+      </div>
+    </section>
+
+    <section class="mt-sm-3 py-5">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-6">
+                  <img class="img img-fluid" id="activity-img_1" src="{% static 'img/Cambridge-Png.png' %}" alt="">
+                </div>
+                <div class="col-md-6 mt-5 mt-sm-2">
+                  <h2 class="">CAMBRIDGE CURRICULUM</h2>
+                  <div class="" id="text_underline"></div>
+                    <p id="para">We are following Cambridge Cucciculum administrated through The University of Cambridge, UK.
+                        <br><br>
+                        CAIE offers internationally recognized qualification of Ordinary (OL) and Advenced Level (AL). Sensitive to the needs of different countries and for learners whose first language may not be English, CAIE enables teaching to be conducted in a localized context and emphasizes broad and balanced study across a range of subjects. 
+                        <br><br>
+                        The CAIE curriculum develops learners' skills in creative thinking, enquiry and problem solving and is structured so they build practical skills and theoretical kmowledge.
+                        <br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-sm-3 py-5">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-md-6 mt-5 mt-sm-2">
+                  <h2 class="">ISLAMIC CURRICULUM</h2>
+                  <div class="" id="text_underline"></div>
+                    <p id="para"> <br> The islamic curriculum in Ethereal is integratd with the regular curriculum of CAIE, Arabic Language, Islamic Studies, Al Qur'an and Hifzul Qur'an. Arabic Language and Islamic studies are compatible with CAIE. <br><br> All islamic subjects except Hifzul Quran are compulsory for all Musilim students, Hifzul Qur'an is an optional choice offered from Grade 1.
+                    </p>
+                    <p id="para">Hadiths, Duaas, Manners and values, Principles of Islam (Fiqh, beliefs, Fiver pillars of Islam), Islamic history (Life of prophet Mohammad (p.b.u.h), his companions, Prophhets mentioned in Quran and Islamic manners & values (Duas, Islamic environment, family & community awareness))</p>
+                </div>
+                <div class="col-md-6">
+                  <img class="img img-fluid" id="activity-img_2" src="{% static 'img/Hifz-Blue-Png.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+      </section>
+{% endblock %}

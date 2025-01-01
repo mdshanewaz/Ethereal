@@ -1,0 +1,157 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title_block %} {{ title }} {% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/activity.css' %}">
+    <link rel="stylesheet" href="{% static 'css/proces.css' %}">
+{% endblock css %}
+
+
+{% block body_block %}
+    <section class="about-section py-5">
+        <div class="contain text-center">
+            <h1 class="py-4">ACADEMIC SYLLABUS</h1>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Nursery</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">04 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Lower KG</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">05 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1  text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Upper KG</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">06 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1  text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Grade - 1</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">07 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Grade - 2</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">08 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Grade - 3</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">09 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Grade - 4</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">10 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Grade - 5</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">11 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Grade - 6</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">12 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Grade - 7</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">13 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Grade - 8</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">14 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Grade - 9 (IGCSE)</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">15 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+                <div class="col-md-2 mb-1 text-center" id="admission_card">
+                    <div>
+                        <h3 class="pt-2">Grade - 10 (‘O’ Level)</h3>
+                    </div>
+                    <div class="line"></div>
+                    <div>
+                        <p class="pt-3">16 Years old</p>
+                    </div>
+                    <button class="btn btn-primary mb-3" >Download</button>
+                </div>
+            </div>
+        </div>
+      </section>
+{% endblock %}

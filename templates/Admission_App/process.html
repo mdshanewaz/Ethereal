@@ -1,0 +1,266 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title_block %} {{ title }} {% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/proces.css' %}">
+{% endblock css %}
+
+{% block body_block %}  
+  <section class="about-section py-5">
+    <div class="contain text-center">
+        <h1 class="py-4">ADMISSION INTAKE <br><br> JANUARY TO DECEMBER</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Nursery</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">04 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Lower KG</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">05 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1  text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Upper KG</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">06 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1  text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 1</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">07 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 2</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">08 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 3</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">09 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 4</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">10 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 5</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">11 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 6</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">12 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 7</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">13 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 8</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">14 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 9</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">15 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 10</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">16 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 11</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">17 Years old</p>
+                </div>
+            </div>
+            <div class="col-md-2 mb-1 text-center" id="admission_card">
+                <div>
+                    <h3 class="pt-2">Grade - 12</h3>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <p class="pt-3">18 Years old</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+        <div class="row pt-md-5">
+            <div class="col-md-3">
+                
+            </div>
+            <div class="col-md-6 text-center">
+                <h1 class="text-center">Admission Proces</h1>
+                <div class="py-1" id="admission_card">
+                    <h4>Form</h4>
+                    <h5>Purchase</h5>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="py-1" id="admission_card">
+                    <h4>Assesment</h4>
+                    <h5>& Interview</h5>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="py-1" id="admission_card">
+                    <h4>Confirmation</h4>
+                    <h5></h5>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="py-1" id="admission_card">
+                    <h4>Enrollment</h4>
+                    <h5></h5>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="py-1" id="admission_card">
+                    <h4>Form & Document</h4>
+                    <h5>Submission</h5>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="py-1" id="admission_card">
+                    <h4>Assessment Result & Form</h4>
+                    <h5>Analysis</h5>
+                </div>
+                <div>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+                <div class="py-1" id="admission_card">
+                    <h4>Admission Fee</h4>
+                    <h5>Payment</h5>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-4">
+                <div class="columns">
+                    <ul class="price">
+                      <li class="header">Admission<br>Application</li>
+                      <li>Admission are open from Play Group to Class 9 Only</li>
+                      <li>Admission are closed for Class 10</li>
+                      <li>Admission are accepted while there is available class capacity</li>
+                      <li>Applications must purchase the Admissions From online or at the Admission office</li>
+                      <li>Applicants assessment are campulsory for play gropu to class 9</li>
+                      <li class="grey"><a href="#" class="button">Apply</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="columns">
+                    <ul class="price">
+                      <li class="header">Admission<br>Assessment</li>
+                      <li>All Applicants must attent admission assesment-orally and / or written</li>
+                      <li>Nursery Applicants are assessed orally</li>
+                      <li>Grade 9 applicants are assessed through written test</li>
+                      <li>Applicants must score over 60% on the assessment to be eligble for admission</li>
+                      <li class="grey"><a href="#" class="button">Apply</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="columns">
+                    <ul class="price">
+                      <li class="header">Admission<br>Documents</li>
+                      <li>Applicants ID-Brith Certificate or Passport</li>
+                      <li>Father & Mother's ID-National or Passport</li>
+                      <li>Applicants photo-passport size. Father & Mother's photo-passport size</li>
+                      <li>Withdrawal Certificate. Medical Document</li>
+                      <li>Income statement of parents/guardians</li>
+                      <li class="grey"><a href="#" class="button">Apply</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+{% endblock %}

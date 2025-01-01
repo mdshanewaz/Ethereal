@@ -1,0 +1,69 @@
+:root{
+    --color-1 : rgb(28, 55, 104); 
+}
+
+#admission-banner {
+    background: var(--color-1);
+}
+
+.admission-heading {
+    font-weight: bold;
+    color: var(--color-1);
+    font-size: 4rem;
+}
+
+.admission-heading span {
+    font-size: 2.5rem;
+}
+
+.admission-para {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.admision-open {
+    border: 4px solid red;
+    border-radius: 15px;
+}
+
+.admision-open h1 {
+    color: red;
+    font-weight: bold;
+    font-size: 5rem;
+    letter-spacing: 1vw;
+    word-spacing: 2vw;
+}
+
+.admision-open p {
+    color: rgb(119, 5, 5);
+    font-size: 30px;
+}
+
+.admision-location p {
+    color: var(--color-1);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media(max-width:520px){
+    .admission-heading {
+        font-size: 1.5rem;
+        
+    }
+
+    .admission-heading span {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .admision-open h1 {
+        font-size: 2rem;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-decoration: underline;
+    }
+
+    .admision-open p{
+        font-size: 20px;
+    }
+}
