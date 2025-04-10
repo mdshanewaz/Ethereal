@@ -11,4 +11,5 @@ urlpatterns = [
     path('extracurr/', views.extracurr_view, name='extracurr'),
     path('campus/', views.resourceful_campus_view, name='campus'),
     path('hifz/', views.hifz_view, name='hifz'),
+    path('contact/', views.contact_view, name='contact'),
 ]
