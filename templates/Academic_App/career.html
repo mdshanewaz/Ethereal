@@ -5,50 +5,76 @@
 {% block title_block %} {{ title }} {% endblock %}
 
 {% block css %}
-    <link rel="stylesheet" href="{% static 'css/about.css' %}">
-    <link rel="stylesheet" href="{% static 'css/activity.css' %}">
-    <link rel="stylesheet" href="{% static 'css/proces.css' %}">
+    
 {% endblock css %}
 
 
 {% block body_block %}
-<section class="about-section py-5">
+<section class="about-section py-5 bg-dark">
     <div class="contain text-center">
-        <h1 class="py-4">BE A PART OF US</h1>
+        <h1 class="py-4 text-light">BE A PART OF US</h1>
     </div>
 </section>
 
-<section class="container mt-5">
-    <form action="">
+<!-- <section class="container mt-5">
+    <div>
+        {% for message in messages %}
+        <h3>{{message}}</h3>
+        {% endfor %}
+    </div>
+</section> -->
+
+<section class="container my-5">
+    <form action="" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
         <section>
             <div class="row">
                 <h3>Personal Information</h3>
                 <div class="col-md-9">
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Applicant's Name</label>
+                    <div class="row">
                         <div class="col-sm-10">
-                            <input type="text" class="form-control mb-3" placeholder="" required>
+                            <div class="form-group row">
+                                <label class="col-form-label">Applicant's Name</label>
+                                <div class="">
+                                    {{ personal_form.name }}
+                                </div>
+                            </div>
+        
+                            <div class="form-group row">
+                                <label class="col-form-label">Father's Name</label>
+                                <div class="">
+                                    {{ personal_form.father_name }}
+                                </div>
+                            </div>
+                            
+                            <div class="form-group row">
+                                <label class="col-form-label">Mother's Name</label>
+                                <div class="">
+                                    {{ personal_form.mother_name }}
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="col-md-2">
+                            <div class="form-group row">
+                                <label class="col-form-label">Upload Image</label>
+                                <div>
+                                    {{ personal_form.photo }}
+                                </div>
+                            </div>
+        
+                            <div class="form-group row">
+                                <label class="col-form-label">Upload Sign</label>
+                                <div>
+                                    {{ personal_form.signature }}
+                                </div>
+                            </div>
 
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Father's Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control mb-3" placeholder="" required>
+                            <div>
+                                <label class="col-form-label">Gender</label>
+                                {{ personal_form.gender }}
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">Mother's Name</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control mb-3" placeholder="" required>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <label>Upload Image</label>
-                    <input type="file" class="form-control-file" placeholder="Upload Image" required>
                 </div>
             </div>
         </section>
@@ -57,52 +83,46 @@
             <div class="row">
                 <div class="col-md-6">
                     <label>Permanent Address</label>
-                    <textarea class="form-control mb-3" rows="5" id="comment" name="text" required></textarea>
+                    {{ personal_form.permanent_address }}
                 </div>
                 <div class="col-md-6">
                     <label>Present Address</label>
-                    <textarea class="form-control mb-3" rows="5" id="comment" name="text" required></textarea>
+                    {{ personal_form.present_address }}
                 </div>
                 <div class="col-md-4 form-group row">
                     <label class="col-form-label">Email</label>
                     <div>
-                        <input type="email" class="form-control mb-3" required>
+                        {{ personal_form.email }}
                     </div>
                 </div>
                 <div class="col-md-4 form-group row">
                     <label class="col-form-label">Phone 1</label>
                     <div>
-                        <input type="number" class="form-control mb-3" required>
+                        {{ personal_form.contact_num_1 }}
                     </div>
                 </div>
                 <div class="col-md-4 form-group row">
                     <label class="col-form-label">Phone 2</label>
                     <div>
-                        <input type="number" class="form-control mb-3">
+                        {{ personal_form.contact_num_2 }}
                     </div>
                 </div>
                 <div class="col-md-4 form-group row">
                     <label class="col-form-label">Religion</label>
                     <div>
-                        <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example">
-                            <option selected>Single</option>
-                            <option value="1">Married</option>
-                        </select>
+                        {{ personal_form.religon }}
                     </div>
                 </div>
                 <div class="col-md-4 form-group row">
                     <label class="col-form-label">Marital Status </label>
                     <div>
-                        <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example">
-                            <option selected>Single</option>
-                            <option value="1">Married</option>
-                        </select>
+                        {{ personal_form.married }}
                     </div>
                 </div>
                 <div class="col-md-4 form-group row">
                     <label class="col-form-label">Spouse Name</label>
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ personal_form.spouse_name }}
                     </div>
                 </div>
             </div>
@@ -111,43 +131,42 @@
         <section>
             <div class="row mt-md-5">
                 <h3>Academic Qualification</h3>
-                <div class="col-md-2 form-group row">
+                {{ education_formset.management_form }}
+                {% for form in education_formset %}
+                <div class="col-md-1 form-group row">
                     <label class="col-form-label">Exam</label>
                     <div>
-                        <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example">
-                            <option selected>Single</option>
-                            <option value="1">Married</option>
-                        </select>
+                        <label class="col-form-label">Masters</label>
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
-                    <label class="col-form-label">Year</label>
+                    <label class="col-form-label text-center">Year</label>
                     <div>
-                        <input type="number" class="form-control mb-3" required>
+                        {{ form.masters }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
-                    <label class="col-form-label">Result</label>
+                    <label class="col-form-label text-center">Result</label>
                     <div>
-                        <input type="number" class="form-control mb-3" required>
+                        {{ form.result_1 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
-                    <label class="col-form-label">Group/Subject</label>
+                    <label class="col-form-label text-center">Group/Department</label>
                     <div>
-                        <input type="text" class="form-control mb-3" required>
-                    </div>
-                </div>
-                <div class="col-md-2 form-group row">
-                    <label class="col-form-label">Institute/Department</label>
-                    <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.group_subject_1 }}
                     </div>
                 </div>
                 <div class="col-md-3 form-group row">
-                    <label class="col-form-label">Board/University</label>
+                    <label class="col-form-label text-center">Faculty/Board</label>
                     <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.board_faculty_1 }}
+                    </div>
+                </div>
+                <div class="col-md-3 form-group row">
+                    <label class="col-form-label text-center">Institute/University</label>
+                    <div>
+                        {{ form.institute_1 }}
                     </div>
                 </div>
             </div>
@@ -155,37 +174,34 @@
 
         <section>
             <div class="row">
-                <div class="col-md-2 form-group row">
+                <div class="col-md-1 form-group row">
                     <div>
-                        <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example">
-                            <option selected>Single</option>
-                            <option value="1">Married</option>
-                        </select>
+                        <label class="col-form-label">Bachelor</label>
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="number" class="form-control mb-3" required>
+                        {{ form.bachelor }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="number" class="form-control mb-3" required>
+                        {{ form.result_2 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3" required>
-                    </div>
-                </div>
-                <div class="col-md-2 form-group row">
-                    <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.group_subject_2 }}
                     </div>
                 </div>
                 <div class="col-md-3 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.board_faculty_2 }}
+                    </div>
+                </div>
+                <div class="col-md-3 form-group row">
+                    <div>
+                        {{ form.institute_3 }}
                     </div>
                 </div>
             </div>
@@ -193,37 +209,34 @@
 
         <section>
             <div class="row">
-                <div class="col-md-2 form-group row">
+                <div class="col-md-1 form-group row">
                     <div>
-                        <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example">
-                            <option selected>Single</option>
-                            <option value="1">Married</option>
-                        </select>
+                        <label class="col-form-label">HSC</label>
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="number" class="form-control mb-3" required>
+                        {{ form.hsc }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="number" class="form-control mb-3" required>
+                        {{ form.result_3 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3" required>
-                    </div>
-                </div>
-                <div class="col-md-2 form-group row">
-                    <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.group_subject_3 }}
                     </div>
                 </div>
                 <div class="col-md-3 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.board_faculty_3 }}
+                    </div>
+                </div>
+                <div class="col-md-3 form-group row">
+                    <div>
+                        {{ form.institute_3 }}
                     </div>
                 </div>
             </div>
@@ -231,73 +244,74 @@
 
         <section>
             <div class="row">
-                <div class="col-md-2 form-group row">
+                <div class="col-md-1 form-group row">
                     <div>
-                        <select class="form-select form-select-md mb-3" aria-label=".form-select-sm example">
-                            <option selected>Single</option>
-                            <option value="1">Married</option>
-                        </select>
+                        <label class="col-form-label">SSC</label>
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="number" class="form-control mb-3" required>
+                        {{ form.ssc }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="number" class="form-control mb-3" required>
+                        {{ form.result_4 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3" required>
-                    </div>
-                </div>
-                <div class="col-md-2 form-group row">
-                    <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.group_subject_4 }}
                     </div>
                 </div>
                 <div class="col-md-3 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.board_faculty_4 }}
                     </div>
                 </div>
+                <div class="col-md-3 form-group row">
+                    <div>
+                        {{ form.institute_4 }}
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </section>
 
         <section>
             <div class="row mt-md-5">
                 <h3>Training/Course</h3>
+                {{ training_formset.management_form }}
+
+                {% for form in training_formset %}
                 <div class="col-md-4 form-group row">
-                    <label class="col-form-label">Training Title</label>
+                    <label class="col-form-label">Title</label>
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.title_1 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <label class="col-form-label">Year</label>
                     <div>
-                        <input type="number" class="form-control mb-3">
+                        {{ form.year_1 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <label class="col-form-label">Result</label>
                     <div>
-                        <input type="number" class="form-control mb-3">
+                        {{ form.result_1 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <label class="col-form-label">Duration</label>
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.duration_1 }}
                     </div>
                 </div>
                 <div class="col-md-3 form-group row">
                     <label class="col-form-label">Institute</label>
                     <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.institute_1 }}
                     </div>
                 </div>
             </div>
@@ -307,63 +321,67 @@
             <div class="row">
                 <div class="col-md-4 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.title_2 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="number" class="form-control mb-3">
+                        {{ form.year_2 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="number" class="form-control mb-3">
+                        {{ form.result_2 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.duration_2 }}
                     </div>
                 </div>
                 <div class="col-md-3 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.institute_2 }}
                     </div>
                 </div>
+                {% endfor %}
             </div>
         </section>
 
         <section>
             <div class="row mt-md-5">
                 <h3>Experience (If any)</h3>
+                {{ experience_formset.management_form }}
+
+                {% for form in experience_formset %}
                 <div class="col-md-4 form-group row">
                     <label class="col-form-label">Position</label>
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.position_1 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <label class="col-form-label">Duration</label>
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.duration_1 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <label class="col-form-label">Department</label>
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.department_1 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <label class="col-form-label">Institution</label>
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.institute_1 }}
                     </div>
                 </div>
                 <div class="col-md-3 form-group row">
                     <label class="col-form-label">Responsibility</label>
                     <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.responsibility_1 }}
                     </div>
                 </div>
             </div>
@@ -373,38 +391,43 @@
             <div class="row">
                 <div class="col-md-4 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.position_2 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.duration_2 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.department_2 }}
                     </div>
                 </div>
                 <div class="col-md-2 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3">
+                        {{ form.institute_2 }}
                     </div>
                 </div>
                 <div class="col-md-3 form-group row">
                     <div>
-                        <input type="text" class="form-control mb-3" required>
+                        {{ form.responsibility_2 }}
                     </div>
                 </div>
+                {% endfor %}
             </div>
         </section>
 
         <section>
             <div class="row mt-md-5">
-                <h3>Extracurricular/ Skill</h3>
+                <h3>Extracurricular / Skill</h3>
+                {{ skill_formset.management_form }}
+
+                {% for form in skill_formset %}
                 <div class="col-md-12">
-                    <textarea class="form-control mb-3" rows="5" id="comment" name="text" required></textarea>
+                    {{ form.description }}
                 </div>
+                {% endfor %}
             </div>
         </section>
 
@@ -412,32 +435,36 @@
             <div class="row mt-md-5">
                 <h3>Reference </h3>
                 <div class="col-md-6">
+                    {{ reference_formset.management_form }}
+
+                    {% for form in reference_formset %}
                     <div class="form-group">
-                        <label class="col-sm-6 col-form-label">Person 1 (Name)</label>
+                        <label class="col-sm-6 col-form-label">Name of person-1</label>
                         <div class="col-sm-12">
-                            <input type="text" class="form-control mb-3" placeholder="" required>
+                            {{ form.name_1 }}
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-6 col-form-label">About</label>
                         <div>
-                            <textarea class="form-control mb-3" rows="5" id="comment" name="text" required></textarea>
+                            {{ form.contact_info_1 }}
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label class="col-sm-6 col-form-label">Person 2 (Name)</label>
+                        <label class="col-sm-6 col-form-label">Name of person-2</label>
                         <div class="col-sm-12">
-                            <input type="text" class="form-control mb-3" placeholder="" required>
+                            {{ form.name_2 }}
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-6 col-form-label">About</label>
                         <div>
-                            <textarea class="form-control mb-3" rows="5" id="comment" name="text" required></textarea>
+                            {{ form.contact_info_2 }}
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </section>
