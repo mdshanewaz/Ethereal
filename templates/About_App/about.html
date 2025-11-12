@@ -7,16 +7,18 @@
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
     <link rel="stylesheet" href="{% static 'css/mission.css' %}">
+    <link rel="stylesheet" href="{% static 'css/teachers.css' %}">
 {% endblock css %}
 
 
 {% block body_block %}
- 
-  <section class="about-section py-5">
-      <div class="contain text-center">
-          <h1 class="py-4" id="school_slogan">School For The Future</h1>
-      </div>
-  </section>
+
+  <section class="contain" id="contain_top_banner">
+        <img class="img_banner" src="{% static 'img/About_Ethereal.jpg' %}" alt="">
+        <div class="overlay"> 
+            <h2 class="text-light display-3">School For The Future</h2>
+        </div>
+    </section>
 
     <section class="mt-5 pt-5">
         <div class="container"> 

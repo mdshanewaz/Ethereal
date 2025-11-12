@@ -7,12 +7,16 @@
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
     <link rel="stylesheet" href="{% static 'css/activity.css' %}">
+    <link rel="stylesheet" href="{% static 'css/teachers.css' %}">
+
 {% endblock css %}
 
-{% block body_block %} 
-    <section class="about-section py-5">
-        <div class="contain text-center">
-            <h1 class="py-4">EXTRACURRICULAR ACTIVITIES</h1>
+{% block body_block %}
+
+    <section class="contain" id="contain_top_banner">
+        <img class="img_banner" src="{% static 'img/Extracurricular.jpg' %}" alt="">
+        <div class="overlay"> 
+            <h2 class="text-light display-3">EXTRACURRICULAR ACTIVITIES</h2>
         </div>
     </section>
 

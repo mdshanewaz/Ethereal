@@ -31,43 +31,10 @@
             <h1 class="admisson_head">ADMISSION QUERY</h1>
             <div class="" id="text_underline"></div>
             <div class="row" id="form_row">
-              <form action="" method="POST">
+              <form action="" method="POST" enctype="multipart/form-data">
                 <fieldset>
-                  <div class="mb-3">
-                    <label class="form-label">Name*</label>
-                    <input type="text" class="form-control" placeholder="Write Your Name" required>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Email*</label>
-                    <input type="email" class="form-control" placeholder="Enter Your Email Address" required>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Phone*</label>
-                    <div class="input-group">
-                      <span class="input-group-text" id="basic-addon1">+880</span>
-                      <input type="tel" class="form-control" placeholder="Enter Your Phone Number" aria-describedby="basic-addon1" required>
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="disabledSelect" class="form-label">Select Grade*</label>
-                    <select id="disabledSelect" class="form-select" required>
-                      <option value="none" selected disabled hidden>Select an Option</option>
-                      <option value="">Nursery</option>
-                      <option value="">Lower KG</option>
-                      <option value="">Upper KG</option>
-                      <option value="">Grade One</option>
-                      <option value="">Grade Two</option>
-                      <option value="">Grade Three</option>
-                      <option value="">Grade Four</option>
-                      <option value="">Grade Five</option>
-                      <option value="">Grade Six</option>
-                      <option value="">Grade Seven</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label">Message*</label>
-                    <textarea class="form-control" name="" id="" rows="5" required></textarea>
-                  </div>
+                  {{ form|crispy }}
+                  {% csrf_token %}
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </fieldset>
               </form>

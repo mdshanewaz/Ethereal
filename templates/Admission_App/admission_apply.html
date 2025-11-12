@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title_block %} {{ title }} {% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admision.css' %}">
+    <link rel="stylesheet" href="{% static 'css/teachers.css' %}">
+{% endblock css %}
+
+{% block body_block %}
+
+    <section class="contain" id="contain_top_banner">
+        <img class="img-fluid" src="{% static 'img/admission/Web-page.jpg' %}" alt="">
+        <div class="overlay"> 
+            <h2 class="text-light display-3">APPLY FOR ADMISSION</h2>
+        </div>
+    </section>
+
+    <section class="container">
+        <form class="my-5" method="POST" enctype="multipart/form-data">
+            {{ form|crispy }}
+            {% csrf_token %}
+            
+            <button class="btn btn-success text-center" type="submit">Submit The Application</button>
+        </form>
+    </section>
+
+{% endblock %}  

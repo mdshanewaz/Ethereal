@@ -1,0 +1,122 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title_block %} {{ title }} {% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/admision.css' %}">
+{% endblock css %}
+
+{% block body_block %}  
+    <section class="contain text-center" id="admission-banner">
+      <img class="img img-fluid px-3" src="{% static 'img/Png-white.png' %}" alt="">
+    </section>
+    
+    <section class="container py-5">
+      <div class="row text-center">
+        <h1 class="admission-heading"><span>First</span> English Medium School <span>in Feni</span></h1>
+      </div>
+      <div class="row">
+        <p class="admission-para pt-3 px-sm-3">We offer Cambridge Curriculum integrated with Islamic education.
+          We are committed to providing state-of-the-art educational facilities,
+          a qualified teachers team & a conducive learning environment for learners.
+          There is an excellent balanced combination of Hifzul Quran with regular schooling.</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row text-center">
+        <div class="col-sm-6">
+          <img class="img img-fluid w-50 mb-4" src="{% static 'img/Hifz-Blue-Png.png' %}" alt="">
+        </div>
+        <div class="col-sm-6">
+          <img class="img img-fluid w-50" src="{% static 'img/Cambridge-Png.png' %}" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5 text-center admision-open">
+      <div class="row">
+        <h1 class=" py-3">ADMISSION OPEN</h1>
+      </div>
+      <div class="row">
+        <p>Cambridge Early Years, Primary & Secondary Programme,<br>Leading to 'O' and 'A' Levels.</p>
+      </div>
+    </section>
+
+    <section class="py-3" style="background-color: #f5822021;;">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4">
+            <img class="img img-fluid px-5" src="{% static 'img/Dangler-Back.png' %}" alt="">
+          </div>
+          <div class="col-sm-4">
+            <img class="img img-fluid px-5" src="{% static 'img/Colour-Ad.png' %}" alt="">
+          </div>
+          <div class="col-sm-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+          <!-- <div class="col-md-6">
+            <h2 class="admisson_head">ADMISSION QUERY</h2>
+            <div class="" id="text_underline"></div>
+            <div class="row" id="form_row">
+              <form action="" method="POST">
+                <fieldset>
+                  <div class="mb-3">
+                    <label class="form-label">Name*</label>
+                    <input type="text" class="form-control" placeholder="Write Your Name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Email*</label>
+                    <input type="email" class="form-control" placeholder="Enter Your Email Address" required>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Phone*</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon1">+880</span>
+                      <input type="tel" class="form-control" placeholder="Enter Your Phone Number" aria-describedby="basic-addon1" required>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">Select Grade*</label>
+                    <select id="disabledSelect" class="form-select" required>
+                      <option value="none" selected disabled hidden>Select an Option</option>
+                      <option value="">Nursery</option>
+                      <option value="">Lower KG</option>
+                      <option value="">Upper KG</option>
+                      <option value="">Grade One</option>
+                      <option value="">Grade Two</option>
+                      <option value="">Grade Three</option>
+                      <option value="">Grade Four</option>
+                      <option value="">Grade Five</option>
+                      <option value="">Grade Six</option>
+                      <option value="">Grade Seven</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Message*</label>
+                    <textarea class="form-control" name="" id="" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </fieldset>
+              </form>
+            </div>
+          </div> -->
+          <div class="col-md-12 admision-location">
+            <div class="row">
+              <iframe class="mt-md-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8734.460267432885!2d91.39266102670955!3d23.009515822759518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375369a40e462c1b%3A0x9c4493eee9986bbd!2sEthereal!5e0!3m2!1sen!2sbd!4v1700723926179!5m2!1sen!2sbd" width="600" height="480" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <p class="text-center pt-3">Safa Tower, Doctor Para, Feni. Cell: 01894 615454 <br>
+                Email: ethereal.edu.bd@gmail.com <br> Website: <a href="https://ethereal.com.bd" target="_blank">www.ethereal.com.bd</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

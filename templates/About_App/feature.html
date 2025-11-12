@@ -7,13 +7,16 @@
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
     <link rel="stylesheet" href="{% static 'css/activity.css' %}">
+    <link rel="stylesheet" href="{% static 'css/teachers.css' %}">
 {% endblock css %}
 
 {% block body_block %}
-    <section class="about-section py-5">
-      <div class="contain text-center">
-          <h1 class="py-4">OUR FEATURES</h1>
-      </div>
+
+    <section class="contain" id="contain_top_banner">
+        <img class="img_banner" src="{% static 'img/Feature_1.jpg' %}" alt="">
+        <div class="overlay"> 
+            <h2 class="text-light display-3">OUR FEATURES</h2>
+        </div>
     </section>
 
     <section class="mt-sm-3 py-5">
@@ -86,7 +89,7 @@
       <div class="container"> 
           <div class="row">
               <div class="col-md-6">
-                <img class="img img-fluid" id="activity-img_1" src="{% static 'img/activity.jpg' %}" alt="">
+                <img class="img img-fluid" id="activity-img_1" src="{% static 'img/Promo-Image-2026_0008_IMG_.jpg' %}" alt="">
               </div>
               <div class="col-md-6 mt-5 mt-sm-2">
                 <h2 class="">ACTIVITY BASED TEACHING</h2>

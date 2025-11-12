@@ -9,7 +9,7 @@
 {% endblock css %}
 
 {% block body_block %}   
-    <section class="contain">
+    <section class="contain" id="contain_top_banner">
         <img class="img_banner" src="{% static 'img/teachers.jpg' %}" alt="">
         <div class="overlay"> 
             <h2 class="text-light display-3">OUR DEDICATED FACULTY MEMBERS</h2>
@@ -25,6 +25,7 @@
                     <div class="card-body">
                       <h4 class="card-title" id="title">{{ member.name }}</h4>
                       <p class="card-text">{{ member.designation }}</p>
+                      <p class="card-text">{{ member.education }}</p>
                       <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">See Profile</button> -->
                     </div>
                 </div>

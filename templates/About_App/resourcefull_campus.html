@@ -7,14 +7,17 @@
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/about.css' %}">
     <link rel="stylesheet" href="{% static 'css/campus.css' %}">
+    <link rel="stylesheet" href="{% static 'css/teachers.css' %}">
 {% endblock css %}
 
 {% block body_block %}
-    <section class="about-section py-5">
-      <div class="contain text-center">
-          <h1 class="py-4">OUR CAMPUS</h1>
-      </div>
+    <section class="contain" id="contain_top_banner">
+        <img class="img_banner" src="{% static 'img/RESOURCEFUL-CAMPUS.jpg' %}" alt="">
+        <div class="overlay"> 
+            <h2 class="text-light display-3">RESOURCEFUL-CAMPUS</h2>
+        </div>
     </section>
+
 
     <section class="mt-sm-3 pt-5">
         <div class="container"> 

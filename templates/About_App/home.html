@@ -1,25 +1,31 @@
 {% extends 'index.html' %}
 {% load static %}
-{% load crispy_forms_tags %}
 
 {% block title_block %} {{ title }} {% endblock %}
 
 {% block body_block %}
 
+<section class="contain" id="poster_contain">
+  <div id="poster">
+    <button id="close_poster"><i class="fa-solid fa-xmark"></i></button>
+    <img src="{% static 'img/Poster_1.jpg' %}" class="img-fluid" alt="">
+  </div>
+</section>
+
 <section class="contain">
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="2000" id="carousel">
-          <img src="{% static 'img/banner/Web Cover Final-01.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
+          <img src="{% static 'img/banner/Web_Cover_Final-01.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="{% static 'img/banner/Web Cover Final-02.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
+          <img src="{% static 'img/banner/Web_Cover_Final-02.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="{% static 'img/banner/Web Cover Final-03.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
+          <img src="{% static 'img/banner/Web_Cover_Final-03.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img src="{% static 'img/banner/Web Cover Final-04.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
+          <img src="{% static 'img/banner/Web_Cover_Final-04.jpg' %}" class="d-block w-100" id="carousel_img" alt="...">
         </div>
       </div>
     </div>
@@ -43,8 +49,8 @@
         <h5 class="title_heading">Wing Commander (Retd) Shah Imran Chowdhury</h5>
         <p class="sub-title">President, Ethereal English Medium School</p>
       </div>
-      <div class="col-md-4 px-5">
-        <img class="img-fluid mt-sm-5" id="President-img" src="{% static 'img/president.jpg' %}" alt="">
+      <div class="col-md-4" id="message-img-box">
+        <img class="img-fluid" id="President-img" src="{% static 'img/Chairman-Sah-Imran-Chy.jpg' %}" alt="">
       </div>
     </div>
   </section>
@@ -52,9 +58,9 @@
   <div class="container"><hr></div>
 
   <section class="container">
-    <div class="row pb-sm-5">
-      <div class="col-md-4 px-5">
-        <img class="img-fluid mt-md-5" id="President-img" src="{% static 'img/Head.jpg' %}" alt="">
+    <div class="row pb-sm-5" style="position: relative;">
+      <div class="col-md-4" id="message-img-box">
+        <img class="img-fluid" id="President-img" src="{% static 'img/Head_of_the_shool.jpg' %}" alt="">
       </div>
       <div class="col-md-8 pt-3 mt-sm-4">
         <h1 class="message_title">Message from the Head of School</h1>
@@ -203,7 +209,7 @@
     </div>
   </section>
 
-  <section>
+  <!-- <section>
     <div class="container">
       <div class="row py-5">
         <div class="col-md-6">
@@ -274,6 +280,6 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 {% endblock %} 
